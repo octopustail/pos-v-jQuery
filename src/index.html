@@ -4,16 +4,45 @@
     <meta charset="UTF-8">
     <script src="../main/jquery.js"></script>
     <script src="../main/datbase.js"></script>
-    <script src="../main/main.js"></script>
     <script src="../main/itemtable.js"></script>
+    <script src="../main/main.js"></script>
 
     <title>没钱赚商店</title>
+    <style>
+        td, th {
+            min-width: 100px;
+            text-align: center;
+        }
+
+        span{
+            margin: 30px;
+            min-width: 120px;
+        }
+
+        button{
+            width:100px;
+            margin-left: 20px;
+        }
+    </style>
 </head>
 <body>
 <div class="container">
     <p>商品信息</p>
     <table class="item-table">
-        <tr><th>名称</th><th>单位</th><th>单价</th><th>优惠信息</th></tr>
+            <thead>
+            <th>名称</th>
+            <th>单位</th>
+            <th>单价</th>
+            <th>优惠信息</th>
+            <th>已选数量</th>
+            </thead>
+            <tbody class=".tb"></tbody>
+    </table>
+
+    <button id="settlement">结算</button>
+    <div class="cart"></div>
+    <table class="recipt">
+
     </table>
 </div>
 </body>
